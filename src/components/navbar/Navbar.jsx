@@ -8,7 +8,7 @@ export const Navbar = () => {
         <>
           <nav>
             <div>
-                {<NavLink className="logo">
+                {<NavLink className="logo" to="/">
                     <img src={reactimage} alt="" />
                     <span>Hola</span>
                 </NavLink>}

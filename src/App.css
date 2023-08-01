@@ -1,15 +1,8 @@
 body {
-    background: red;
+    background: linear-gradient(340deg, rgba(234,43,207,1) 5%, rgba(89,52,155,1) 55%) fixed;
 }
 
 .navigation {
     background: linear-gradient(340deg, rgba(234,43,207,1) 5%, rgba(89,52,155,1) 55%);
     margin-bottom: 1rem;
-}
-
-.container {
-    margin: 1rem auto;
-    background: aqua;
-    width: 85%;
-    height: 80vh;
 }

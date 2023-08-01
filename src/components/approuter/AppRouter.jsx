@@ -1,7 +1,7 @@
 import { Route, Routes} from 'react-router-dom'
 import { Navbar } from '../navbar/Navbar'
-import { Banner } from '../banner/Banner'
 import { Contacto } from '../contacto/Contacto'
+import { Inicio } from '../../pages/inicio/Inicio'
 
 export const AppRouter = () => {
     return(
@@ -11,7 +11,7 @@ export const AppRouter = () => {
             </div>
             <Routes>
                 <Route path="/">
-                    <Route index element={<Banner/>}/>
+                    <Route index element={<Inicio/>}/>
                     <Route path='contacto' element={<Contacto/>}/>
                 </Route>
             </Routes>
