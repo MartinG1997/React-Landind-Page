@@ -17,10 +17,10 @@ export const Navbar = () => {
                 <NavLink to="/">
                     Inicio
                 </NavLink>
-                <NavLink>
+                <NavLink to='/Servicios'>
                     Servicios
                 </NavLink>
-                <NavLink to='/contacto'>
+                <NavLink to='/'>
                     Contactanos
                 </NavLink>
             </div>
