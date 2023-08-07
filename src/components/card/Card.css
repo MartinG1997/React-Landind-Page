@@ -36,6 +36,7 @@
 }
 
 .card-description {
+    font-size: calc(1em + 2px);
     line-height: 1.3rem;
     margin: 0 15px;
     text-align: left;

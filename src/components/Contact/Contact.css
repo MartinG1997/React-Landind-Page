@@ -1,0 +1,23 @@
+.contact-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    background: aqua;
+}
+
+.contact-container > div {
+    flex: 1;
+}
+
+.black {
+    height: 8rem;
+    min-width: clamp(calc(288px), 40%, 518px);
+    background: black;
+}
+.red {
+    height: 8rem;
+    min-width: clamp(calc(288px), 60%, 777px);
+    background: red;
+}

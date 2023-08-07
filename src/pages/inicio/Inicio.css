@@ -37,6 +37,7 @@ img {
     margin-inline: auto;
     width: 90%;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 820px) {

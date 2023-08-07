@@ -1,10 +1,11 @@
 
-export const BannerImgDer = ({img, titulo, descripcion}) => {
+export const BannerImgDer = ({img, titulo, descripcion, subtitulo}) => {
     return(
         <>
             <div className="order-2">
-                <h1>{titulo}</h1>
-                <p>
+                <h2 className="title">{titulo}</h2>
+                <p className='subtitle'>{subtitulo}</p>
+                <p className="text-content">
                     {descripcion}
                 </p>
             </div>
