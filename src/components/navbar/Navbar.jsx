@@ -20,9 +20,6 @@ export const Navbar = () => {
                 <NavLink to='/Servicios'>
                     Servicios
                 </NavLink>
-                <NavLink to='/'>
-                    Contactanos
-                </NavLink>
             </div>
           </nav>
         </>
