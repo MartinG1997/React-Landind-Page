@@ -4,6 +4,7 @@ import { Card } from '../../components/Card/Card';
 import { BannerImgIzq } from '../../components/BannerImgIzq/BannerImgIzq';
 import { BannerImgDer } from '../../components/BannerImgDer/BannerImgDer';
 import { Contact } from '../../components/Contact/Contact';
+import { Footer } from '../../components/Footer/Footer';
 
 export const Inicio = () => {
     return(
@@ -19,6 +20,8 @@ export const Inicio = () => {
             <div>
                 <Contact/>
             </div>
+            
+            <Footer/>
         </>
     )
 }

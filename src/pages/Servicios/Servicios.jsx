@@ -1,6 +1,7 @@
 import { BannerImgDer } from "../../components/BannerImgDer/BannerImgDer"
 import { BannerImgIzq } from "../../components/BannerImgIzq/BannerImgIzq"
 import Masajes from '../../assets/Masajes.jpg';
+import { Footer } from "../../components/Footer/Footer";
 
 export const Servicios = () => {
     return(
@@ -11,6 +12,7 @@ export const Servicios = () => {
             <div className='container'>
                 <BannerImgDer img ={Masajes} titulo={'Regalonea a alguien'} descripcion={'También puedes consultarnos por los diferentes regalos que tenemos, estos son uno o más sesiones de masajes que ofrecemos. Consultanos.'}/>
             </div>
+            <Footer/>
         </>
     )
 }
