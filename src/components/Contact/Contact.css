@@ -31,6 +31,10 @@
     padding: 2rem;
 }
 
+.left {
+    float: left;
+}
+
 .form-cont {
     width: 80%;
     margin: 0 auto;
