@@ -3,6 +3,7 @@ import { db } from '../../config/firebase'
 import { addDoc, collection, getDocs, query, where } from 'firebase/firestore'
 import { validarRut, formatearRut } from '../../config/ValidarRUT'
 import './Contact.css'
+import { Link, NavLink } from 'react-router-dom'
 
 export const Contact = () => {
 
@@ -49,6 +50,13 @@ export const Contact = () => {
     setRut(formattedRut);
     setIsValid(validarRut(formattedRut));
   };
+  const handleChange2 = (e) => {
+    let formattedRut = e.target.value.replace(/[^0-9kK]/g, ""); // Eliminar caracteres no numéricos
+    formattedRut = formattedRut.slice(0, -1) + "-" + formattedRut.slice(-1); // Agregar guion
+    formattedRut = formattedRut.replace(/\B(?=(\d{3})+(?!\d))/g, "."); // Agregar puntos cada 3 dígitos
+    setReserva(formattedRut);
+    setIsValid(validarRut(formattedRut));
+  };
 
   
   /*useEffect(() => {
@@ -61,21 +69,18 @@ export const Contact = () => {
       <div className="info">
         <h2>RelaxIA</h2>
         <p>Masajes a domicilio</p>
-        {/*<form onSubmit={getReserva}>
+        <form>
             <div className="form-row">
                 <div className="col-75">
-                  <input type="text" value={RUT} onChange={handleChange} placeholder='Ingrese RUT'/>
+                  <input type="text" value={reserva} onChange={handleChange2} placeholder='Ingrese RUT'/>
                 </div>
             </div>
             <div className='row left'>
-                <input type='submit' id='submit' value='Consultar'/>
+                <NavLink to={`consulta/${reserva}`}><input type='submit' id='submit' value='Consultar'/></NavLink>
             </div>
-  </form>*/}
+        </form>
       </div>
         <div className="formulario">
-            {/*{reserva.map( reservas => (
-              <p key={reservas.id}>{reservas.RUT}</p>
-            ))}*/}
             <form onSubmit={OnStore} className='form-cont'>
             <div className="form-row">
                 <div className='col-25'>

@@ -1,0 +1,34 @@
+.request-cont {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.request-cont table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    color: white;
+}
+
+td,th {
+    padding: 1rem;
+  }
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #2e2c6e;
+}
+tr:nth-child(odd){
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+}
+tr:hover {background-color: #ddd;}

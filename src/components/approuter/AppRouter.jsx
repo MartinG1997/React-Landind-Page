@@ -1,8 +1,9 @@
 import { Route, Routes} from 'react-router-dom'
 import { Navbar } from '../navbar/Navbar'
-import { Contacto } from '../contacto/Contacto'
-import { Inicio } from '../../pages/inicio/Inicio'
+import { Inicio } from '../../pages/Inicio/Inicio'
 import { Servicios } from '../../pages/Servicios/Servicios'
+import { Consulta } from '../../pages/consulta/consulta'
+
 
 export const AppRouter = () => {
     return(
@@ -14,6 +15,7 @@ export const AppRouter = () => {
                 <Route path="/">
                     <Route index element={<Inicio/>}/>
                     <Route path='servicios' element={<Servicios/>}/>
+                    <Route path='consulta/:reserva' element={<Consulta/>}/>
                 </Route>
             </Routes>
         </>
